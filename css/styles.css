@@ -1,0 +1,10 @@
+body {
+    background-image: url(../images/pizzabackground.jpg);
+    text-align: center;
+    align-items: center;
+}
+h {
+    font-weight: bolder;
+    font-size: larger;
+    color: brown;
+}
