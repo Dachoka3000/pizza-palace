@@ -5,28 +5,40 @@
        <link href="css/styles.css" rel="stylesheet" type="text/css">
        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
        <script src="js/scripts.js"></script>
-       <title>King Munch pizzas</title>
+       <title>King Munch's pizza palace</title>
     </head>
     <body>
         <div class="container">
+            <div class="navigation">
+                <nav>
+                    <img src="images/pizza-logo.webp" alt="logo" width="50" height="50">
+                    <h1>King Munch's pizza palace</h1>
+                </nav>
+            </div>
+            <div class="description">
+                <h>Welcome to King Munch's pizza palace</h>
+                <h1>The best pizzas in town!</h1>
+                <p>Hungry for some pizza? We've got you covered! </p>
+                <p>Design your own pizza. Browse through our menu below and pick the size, crust and toppings that you like. </p>
+            </div>
             <div class="ordering">
                 <h>Sizes</h>
                 <p>Our pizzas come in three main sizes:</p>
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="images/largepizza.jpg" alt="A large pizza" width="200" height="200"><br>
+                        <img src="images/largepizza.jpg" alt="A large pizza" width="300" height="300"><br>
                         <input type="radio" name="size" id="pizzaLarge">
                         <label>LARGE</label>
                         <p id="largePizza">Our large pizzas are 18 inches in diameter. Large enough to share with your whole family.</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="images/mediumpizza.jpg" alt="A medium pizza" width="200" height="200"><br>
+                        <img src="images/mediumpizza.jpg" alt="A medium pizza" width="300" height="300"><br>
                         <input type="radio" name="size" id="pizzaMedium">
                         <label>MEDIUM</label>
                         <p id="mediumPizza">Our medium size pizzas are 10 inches in diameter. Not too big but large enough to be satisfying.</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="images/smallpizza.jpg" alt="A small pizza" width="200" height="200"><br>
+                        <img src="images/smallpizza.jpg" alt="A small pizza" width="300" height="300"><br>
                         <input type="radio" name="size" id="pizzaSmall">
                         <label>SMALL</label>
                         <p id="smallPizza">Our small pizzas are 5 inches in diameter. The perfect size for tiny tummies and kids.</p>
@@ -36,19 +48,19 @@
                 <p>Choose between our different types of crusts.</p>
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="images/stuffedcrust.jpg" alt="stuffed crust" width="200" height="200"><br>
+                        <img src="images/stuffedcrust.jpg" alt="stuffed crust" width="300" height="300"><br>
                         <input type="radio" name="crust" id="crustStuffed">
                         <label>STUFFED</label>
                         <p id="stuffedCrust">Delve into a sumptuous crust stuffed with mashed potatoes and goat cheese.</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="images/crispycrust.jpg" alt="crispy crust" width="200" height="200"><br>
+                        <img src="images/crispycrust.jpg" alt="crispy crust" width="300" height="300"><br>
                         <input type="radio" name="crust" id="crustCrispy">
                         <label>CRISPY</label>
                         <p id="crispyCrust">So crispy, it snaps when you bite into it!</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="images/glutenfreecrust.jpg" alt="gluten-free crust" width="200" height="200"><br>
+                        <img src="images/glutenfreecrust.jpg" alt="gluten-free crust" width="300" height="300"><br>
                         <input type="radio" name="crust" id="crustGlutenFree">
                         <label>GLUTEN-FREE</label>
                         <p id="glutenFreeCrust">Enjoy our vegan-friendly, gluten-free crust.</p>
@@ -58,23 +70,42 @@
                 <p>Pick your preferred toppings</p>
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="images/bbq-chicken-pizza.jpg" alt="Bbq chicken toppings" width="200" height="200"><br>
+                        <img src="images/bbq-chicken-pizza.jpg" alt="Bbq chicken toppings" width="300" height="300"><br>
                         <input type="radio" name="toppings" id="bbqChickenToppings">
                         <label>Barbaque Chicken</label>
                         <p id="chicken">Relish some delicious chicken on your crust</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="images/peperoni.jpg" alt="peperoni toppings" width="200" height="200"><br>
+                        <img src="images/peperoni.jpg" alt="peperoni toppings" width="300" height="300"><br>
                         <input type="radio" name="toppings" id="pepperoniToppings">
                         <label>Pepperoni</label>
                         <p id="peperoni">Mmmh! Bite into the world's most favorite topping.</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="images/Vegetable-Pizza.jpg" alt="vegetable toppings" width="200" height="200"><br>
+                        <img src="images/Vegetable-Pizza.jpg" alt="vegetable toppings" width="300" height="300"><br>
                         <input type="radio" name="toppings" id="veggieToppings">
                         <label>Veggie mix</label>
                         <p id="veggies">Broccoli, mushrooms, pineapples and sweet corn.Enjoy your pizza with this delicious assortment of veggies.</p>
                     </div>
+                </div>
+                <h>Deliveries</h>
+                <p>Would you like your pizza delivered?</p>
+                <label>Yes</label>
+                <input type="radio" name="delivery" id="yesDelivery">
+                <label>No</label>
+                <input type="radio" name="delivery" id="noDelivery">
+                <div class="location">
+                    <p>Please enter the location for your delivery</p>
+                    <input type="text" id="deliveryLocation" required>
+                    <button type="submit" id="bttn1">OK</button>
+                </div>
+                <div>
+                    <button class="btn btn-danger">ORDER NOW</button>
+                </div>
+                <div class="cart">
+                    <ul>
+                        
+                    </ul>
                 </div>
             </div>
         </div>
