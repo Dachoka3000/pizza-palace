@@ -29,19 +29,22 @@
                     <div class="row">
                         <div class="col-md-4">
                             <img src="images/largepizza.jpg" alt="A large pizza" width="300" height="300"><br>
-                            <input type="radio" name="sizes" id="pizzaLarge" value="large" onclick="getSize()">LARGE
+                            <input type="radio" name="sizes" id="pizzaLarge" value="large" onclick="getSize()">
+                            <label>LARGE</label>
                             <p id="largePrice">Kshs.350</p>
                             <p id="largePizza">Our large pizzas are 18 inches in diameter. Large enough to share with your whole family.</p>
                         </div>
                         <div class="col-md-4">
                             <img src="images/mediumpizza.jpg" alt="A medium pizza" width="300" height="300"><br>
-                            <input type="radio" name="sizes" id="pizzaMedium" value="medium" onclick="getSize()">MEDIUM
+                            <input type="radio" name="sizes" id="pizzaMedium" value="medium" onclick="getSize()">
+                            <label>MEDIUM</label>
                             <p id="mediumPrice">Kshs.250</p>
                             <p id="mediumPizza">Our medium size pizzas are 10 inches in diameter. Not too big but large enough to be satisfying.</p>
                         </div>
                         <div class="col-md-4">
                             <img src="images/smallpizza.jpg" alt="A small pizza" width="300" height="300"><br>
-                            <input type="radio" name="sizes" id="pizzaSmall" value="small" onclick="getSize()">SMALL
+                            <input type="radio" name="sizes" id="pizzaSmall" value="small" onclick="getSize()">
+                            <label>SMALL</label>
                             <p id="smallPrice">Kshs.150</p>
                             <p id="smallPizza">Our small pizzas are 5 inches in diameter. The perfect size for tiny tummies and kids.</p>
                         </div>
@@ -51,19 +54,22 @@
                     <div class="row">
                         <div class="col-md-4">
                             <img src="images/stuffedcrust.jpg" alt="stuffed crust" width="300" height="300"><br>
-                            <input type="radio" name="crusts" id="crustStuffed" value="stuffed" onclick="getCrust()">STUFFED
+                            <input type="radio" name="crusts" id="crustStuffed" value="stuffed" onclick="getCrust()">
+                            <label>STUFFED</label>
                             <p id="stuffedPrice">Kshs.300</p>
                             <p id="stuffedCrust">Delve into a sumptuous crust stuffed with mashed potatoes and goat cheese.</p>
                         </div>
                         <div class="col-md-4">
                             <img src="images/crispycrust.jpg" alt="crispy crust" width="300" height="300"><br>
-                            <input type="radio" name="crusts" id="crustCrispy" value="crispy" onclick="getCrust()">CRISPY
+                            <input type="radio" name="crusts" id="crustCrispy" value="crispy" onclick="getCrust()">
+                            <label>CRISPY</label>
                             <p id="crispyPrice">Kshs.200</p>
                             <p id="crispyCrust">So crispy, it snaps when you bite into it!</p>
                         </div>
                         <div class="col-md-4">
                             <img src="images/glutenfreecrust.jpg" alt="gluten-free crust" width="300" height="300"><br>
-                            <input type="radio" name="crusts" id="crustGlutenFree" value="glutenfree" onclick="getCrust()">GLUTEN-FREE
+                            <input type="radio" name="crusts" id="crustGlutenFree" value="glutenfree" onclick="getCrust()">
+                            <label>GLUTEN-FREE</label>
                             <p id="glutenFreePrice">Kshs.400</p>
                             <p id="glutenFreeCrust">Enjoy our vegan-friendly, gluten-free crust.</p>
                         </div>
@@ -73,22 +79,30 @@
                     <div class="row">
                         <div class="col-md-4">
                             <img src="images/bbq-chicken-pizza.jpg" alt="Bbq chicken toppings" width="300" height="300"><br>
-                            <input type="checkbox" class="toppings" id="bbqChickenToppings" value="chicken" onclick="getTopping()">Barbaque Chicken
+                            <input type="checkbox" class="toppings" id="bbqChickenToppings" value="chicken" onclick="getTopping()">
+                            <label>Barbaque Chicken</label>
                             <p id="chickenPrice">Kshs.200</p>
                             <p id="chicken">Relish some delicious chunks of barbaqued chicken on your crust</p>
                         </div>
                         <div class="col-md-4">
                             <img src="images/peperoni.jpg" alt="peperoni toppings" width="300" height="300"><br>
-                            <input type="checkbox" class="toppings" id="pepperoniToppings" value="pepperoni" onclick="getTopping()">Pepperoni
+                            <input type="checkbox" class="toppings" id="pepperoniToppings" value="pepperoni" onclick="getTopping()">
+                            <label>Pepperoni</label>
                             <p id="pepperoniPrice">Kshs.100</p>
                             <p id="peperoni">Mmmh! Bite into the world's most favorite topping.</p>
                         </div>
                         <div class="col-md-4">
                             <img src="images/Vegetable-Pizza.jpg" alt="vegetable toppings" width="300" height="300"><br>
-                            <input type="checkbox" class="toppings" id="veggieToppings" value="veggiemix" onclick="getTopping()">Veggie Mix
+                            <input type="checkbox" class="toppings" id="veggieToppings" value="veggiemix" onclick="getTopping()">
+                            <label>Veggie Mix</label>
                             <p id="veggiesPrice">Kshs.150</p>
                             <p id="veggies">Broccoli, mushrooms, pineapples and sweet corn.Enjoy your pizza with this delicious assortment of veggies.</p>
                         </div>
+                    </div>
+                    <div>
+                        <h>Amount of pizzas</h>
+                        <p>How many pizzas would you like to order?</p>
+                        <input type="number" id="pizzaNumber" required>
                     </div>
                     <h>Deliveries</h>
                     <p>Would you like your pizza delivered at Kshs.150?</p>
@@ -98,26 +112,26 @@
                     <input type="radio" name="delivery" id="noDelivery" value="No">
                     <div class="location">
                         <p>Please enter the location for your delivery</p>
-                        <input type="text" id="deliveryLocation" required>
+                        <input type="text" id="deliveryLocation"required>
                         <button type="button" onclick="deliveryLocator()">Ok</button>
                     </div>
                     <p></p>
-                    <div>
-                        <button type="button" class="btn btn-danger" id="orderNow" onclick="getSize()">ORDER NOW</button>
-                        <button type="reset" class="btn btn-primary" id="orderAnother">ORDER ANOTHER PIZZA</button>
-                    </div>
+                    
                 </div>
                 <div class="cart">
                     <h1>YOUR ORDER</h1>
-                    <h>Size of pizza ordered</h>
+
+                    <h>Size of pizza ordered:</h>
                     <p id="orderSize"></p>
-                    <h>Type of crust ordered</h>
+                    <h>Type of crust ordered:</h>
                     <p id="orderCrust"></p>
-                    <h>Pizza toppings chosen</h>
+                    <h>Pizza toppings chosen:</h>
                     <p id="topping1"></p>
                     <p id="topping2"></p>
                     <p id="topping3"></p>
-                    <p>Your bill is:</p>
+                    <h>Delivery:</h>
+                    <p id="orderDelivery"></p>
+                    <h>Your bill is:</h>
                     <p id="userCost"></p>
                     <button class="btn btn-danger" onclick="totalCost()">CHECKOUT</button>
                 </div>
