@@ -1,12 +1,11 @@
 var newMeal= function(){
     var orders=[];
-    function Order(size, crust, toppings, delivery) {
+    function Order(size, crust, toppings) {
         this.size=size;
         this.crust=crust;
         this.toppings=toppings;
-        this.delivery=delivery;
         this.orderlist=function(){
-            return this.size+'with'+this.crust+'crust and'+this.toppings+'toppings. Delivery '+this.delivery;
+            return this.size+'with'+this.crust+'crust and'+this.toppings+'toppings.';
         }
     }
     function orderlist(){

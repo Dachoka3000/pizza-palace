@@ -147,7 +147,7 @@ var deliveryLocator= function(){
         alert("Your order will be delivered to "+userLocation.value+ ". Delivery fee is Kshs.150");
         document.getElementById("orderDelivery").innerHTML="To be delivered to "+ userLocation.value;
     } else if(noDelivery.checked===true&& yesDelivery.checked===false) {
-        "";
+        document.getElementById("orderDelivery").innerHTML="None";
     }
 }
 
