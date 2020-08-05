@@ -34,9 +34,34 @@ h {
 label {
     font-weight: bolder;
 }
-#orderAnother {
-    display:none;
-}
 .cart {
     background-color: rosybrown;
+}
+#orderSize {
+    font-weight: bolder;
+    font-size: x-large;
+}
+#orderCrust {
+    font-weight: bolder;
+    font-size: x-large;
+}
+#orderDelivery {
+    font-weight: bolder;
+    font-size: x-large;
+}
+#topping1 {
+    font-weight: bolder;
+    font-size: x-large;
+}
+#topping2 {
+    font-weight: bolder;
+    font-size: x-large;
+}
+#topping3 {
+    font-weight: bolder;
+    font-size: x-large;
+}
+#userCost {
+    font-weight: bolder;
+    font-size: x-large;
 }
